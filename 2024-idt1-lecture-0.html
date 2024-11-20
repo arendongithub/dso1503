@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Introduction to Digital Technologies I - Lecture 0</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="./shower/themes/ribbon-orig/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Introduction to Digital Technologies I - Lecture 0</h1>
+    </header>
+
+<!--
+#####
+Slide - Computer Networks and the Internet
+#####
+-->
+
+    <section class="slide" id="cover">
+        <h2>Introduction to Digital Technologies I</h2>
+        <p>Introductory Lecture</p>
+        <figure>
+            <img class="cover width" src="img/idt1-l0-0.png" alt="Introduction to Digital Technologies I">
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - Whoami
+#####
+-->
+    <section class="slide">
+        <h2>About me</h2>
+        <ul>
+            <li>Belgium</li>
+            <li>KU Leuven</li>
+            <li>Educational Technologist</li>
+            <li>Journalist</li>
+            <li>Teacher</li>
+            <li>Research Software Engineer @ The Plant</li>
+        </ul>
+        <figure>
+            <img class="place top right" src="img/idt1-l0-2.png" alt="About me" width="40%" style="opacity: 0.4;">
+        </figure> 
+    </section>
+
+<!--
+#####
+Slide - Building on IDT1
+#####
+-->
+   <section class="slide">
+        <h2>IDT I in Bachelor Digital Society</h2>
+        <table class="striped">
+        <thead>
+          <tr>
+            <th>Bachelor Digital Society</th>
+            <th>Period</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Digitalisation and Politics | DSO1002</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><mark>Introduction to Digital Technologies I | DSO1503</mark></td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>What is Research? | DSO1504</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>ICT Revolutions | DSO1003</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Using Digital Sources | DSO1505</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Digital Cultures | DSO1004</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td><mark>Introduction to Digital Technologies II | DSO1506</mark></td>
+            <td>5</td>
+          </tr>
+        </tbody>
+        </table>
+    </section>
+
+<!--
+#####
+Slide - Computer
+#####
+-->
+
+    <section class="slide">
+        <h2 style="color: white;">IDT I - Computing</h2>
+        <figure>
+            <img class="cover width" src="img/idt1-l0-3a.jpeg" alt="BA Digital Society">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>Computing: behind the screen</h2>
+        <ul>
+            <li>CPU/GPU</li>
+            <li>memory</li>
+            <li>motherboard</li>
+            <li>storage</li>
+            <li>processing</li>
+            <li><mark>algorithms</mark></li>
+            <li>programming</li>
+            <li><mark>apps</mark></li>
+        </ul>
+        <figure>
+            <img class="cover place right" src="img/idt1-l0-3b.png" alt="BA Digital Society" height="500" style="vertical-align:middle;margin:0px 50px">
+        <figure>
+    </section>
+
+<!--
+#####
+Slide - Computer Networking
+#####
+-->
+
+    <section class="slide">
+        <h2>IDT II - Computer Networking</h2>
+        <figure>
+            <img class="cover" src="img/idt1-l0-4a.jpeg" alt="BA Digital Society">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>Computer Networking</h2>
+        <ul>
+            <li>cables</li>
+            <li>packets</li>
+            <li>switches</li>
+            <li>routers</li>
+            <li>protocols</li>
+            <li>internet service providers ...</li>
+        </ul>
+        <figure>
+            <img class="place right" src="img/idt1-l0-4b.png" alt="BA Digital Society" height="500" style="vertical-align:middle;margin:0px 50px">
+        <figure>
+    </section>
+
+<!--
+#####
+Slide - Intersection of computer network engineering, the history of technology and the social sciences.
+#####
+-->
+    <section class="slide">
+        <h2>Intersection of computer technology, the history of technology and the social sciences.</h2>
+        <figure>
+            <img class="cover place bottom" src="img/idt1-l0-6.png" alt="Intersection of computer network engineering, the history of technology and the social sciences" >
+        </figure> 
+    </section>
+
+    <section class="slide">
+        <h2>Three area's</h2>
+        <div class="columns three">
+            <p><strong>Historical</strong><br/> 
+                <mark>Historical development</mark> of computer systems
+            </p>
+            <p><strong>Technical</strong><br/>
+                How do computers 'think', i.e. <mark>process</mark> information?</td>
+            </p>
+            <p><strong>Social</strong><br/>
+                Social <mark>skills</mark> and the myth of the <i>digital native</i>
+            </p>
+        </div>
+        <figure>
+            <img class="place bottom width" src="img/idt1-l0-5.png" alt="Computers Timeline" width="75%">
+        <figure>
+        <style type="text/css">
+            .three {
+                font-size: 0.8em;
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - Course Objectives
+#####
+-->
+    <section class="slide">
+        <h2>Course Objectives</h2>
+        <ul>
+            <li class="next">master the key <strong>vocabulary</strong> related to computing</li>
+            <li class="next">understand the <strong>historical development</strong> and defining characteristics of computer systems</li>            
+            <li class="next">understand <strong>how computers 'think'</strong>, i.e. process information (input variables, algorithmic processes, output)</li>
+            <li class="next">introduction to the basics of <strong>app development</strong>, wireframing and UX design</li>
+        </ul>
+    </section>
+
+<!--
+#####
+Slide - Course design
+#####
+-->
+    <section class="slide">
+        <h2>Course design</h2>
+        <ul>
+            <li>Tutorials</li>
+            <li>Hands on</li>
+            <li>Readings</li>
+            <li>Lectures</li>
+        </ul>
+    </section>
+
+<!--
+#####
+Slide - Revised course
+#####
+-->
+    <section class="slide">
+        <h2>This course has been <mark>revised</mark></h2>
+        <figure>
+            <img class="cover width" src="img/idt1-l0-7.jpeg" alt="BA Digital Society">
+        <figure>
+    </section>
+
+
+<!--
+#####
+Slide - Tutorial starters
+#####
+-->
+    <section class="slide">
+        <h2>Tutorial starters</h2>
+            <blockquote>
+                <p>At the beginning of each tutorial, two students <mark>present a news item</mark> from the previous week in which
+computing technology played an important role.</p>
+            </blockquote>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="img/idt1-l0-8a.png" alt="Internet Blackouts in Gaza">
+        <figure>
+    </section> 
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="img/idt1-l0-8b.png" alt="Social Media">
+        <figure>
+    </section> 
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="img/idt1-l0-8c.png" alt="Cyber Security">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="img/idt1-l0-8d.png" alt="Cyber Security">
+        <figure>
+    </section>
+
+
+<!--
+#####
+Slide - Readings
+#####
+-->
+    <section class="slide">
+        <h2>Readings</h2>
+        <ul>
+            <li>majority of the literature is
+            <mark>available online</mark> through the UM Library</li>
+            <li>compulsory and recommended readings</li>
+        </ul>
+    </section>
+
+
+<!--
+#####
+Slide - Weekly Overview
+#####
+-->
+    <section class="slide">
+        <h2>Weekly Overview</h2>
+        <table style="font-size: 0.9em;">
+            <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Tutorial (Tuesday)</th>
+                    <th>Lecture (Tuesday)</th>
+                  </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>29.10</td>
+                <td>-</td>
+                <td>Lecture 0<br>Introduction to the Course</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>5.11</td>
+                <td><strong>Tutorial 1</strong><br>Digital literacy and youth tech use</td>
+                <td>Lecture 1<br>From vacuum tubes to microprocessors</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>12.11</td>
+                <td><strong>Tutorial 2</strong><br>A brief history of computing<br> </td>
+                <td>Lecture 2<br>How stuff works: the computer</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>19.11</td>
+                <td><strong>Tutorial 3</strong><br>Computer says 01101110 01101111</td>
+                <td>Lecture 3<br>Introducing microprocessor breadboards (Arduino)</td>
+              </tr>
+            </tbody>
+        </table>
+        <style>
+            td, th {
+                vertical-align: top;
+                line-height: 1.5;
+                padding-left: 10px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Weekly Overview</h2>
+        <table style="font-size: 0.9em;">
+            <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Tutorial (Tuesday)</th>
+                    <th>Lecture (Tuesday)</th>
+                  </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td>26.11</td>
+                <td><strong>Tutorial 4</strong><br>Hands-on: getting started with the Arduino Student Kit</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>3.12</td>
+                <td><strong>Tutorial 5</strong><br>Hands-on: Creating an advanced Arduino project<br>Present your Arduino project to the group</td>
+                <td>Lecture 4<br>Basics of App Design</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>10.12</td>
+                <td><strong>Tutorial 6</strong><br>Hands-on: App Design (Wireframing - Prototyping)</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>17.12</td>
+                <td>Exam Week</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+        </table>
+        <style>
+            td, th {
+                vertical-align: top;
+                line-height: 1.5;
+                padding-left: 10px;
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - Arduino
+#####
+-->
+
+    <section class="slide">
+        <h2><mark>Hands-on</mark> Arduino</h2>
+        <figure>
+            <img class="cover" src="img/idt1-l0-11.png" alt="BA Digital Society">
+        <figure>
+    </section>
+    <section class="slide">
+        <h2 style="color: white;">What you are going to build</h2>
+
+        <iframe class="cover" width="100%" height="100%" src="https://www.youtube.com/embed/O7yoa-hwnkI?si=hPUQaQ68sbv671MM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen frameborder="0"></iframe>
+
+    </section>
+
+    <section class="slide">
+        <h2><mark>Hands-on</mark> App design</h2>
+        <figure>
+            <img class="cover width" src="img/idt1-l0-13.png" alt="BA Digital Society">
+        <figure>
+    </section>
+
+<!--
+#####
+Slide - Attendance and Participation
+#####
+-->
+    <section class="slide">
+        <h2>Attendance and Participation</h2>
+        <ul>
+            <li>Attendance in Tutorials and Lectures</li>
+            <li>Extra assignment in case you do not attend two tutorials</li>
+            <li>-/+ 0,5 Participation Rule</li>
+        </ul>
+    </section>
+
+<!--
+#####
+Slide - Assessment
+#####
+-->
+    <section class="slide">
+        <h2><mark>3</mark> Assessments</h2>
+        <table><thead>
+          <tr>
+            <th style="line-height: 2.5;">Component</th>
+            <th style="line-height: 2.5;">weight</th>
+          </tr></thead>
+        <tbody>
+          <tr>
+            <td style="line-height: 2.5;">Class participation</td>
+            <td style="line-height: 2.5;">20%</td>
+          </tr>
+          <tr>
+            <td style="line-height: 2.5;">Arduino project presentation</td>
+            <td style="line-height: 2.5;">50%</td>
+          </tr>
+          <tr>
+            <td style="line-height: 2.5;">App design template</td>
+            <td style="line-height: 2.5;">30%</td>
+          </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <section class="slide">
+        <h2>Class participation</h2>
+        <ul>
+            <li>Preparation</li>
+            <li>Initiation</li>
+            <li>Leadership</li>
+            <li>Critical Thinking<br>and Opinion</li>
+            <li>Summary and Synthesis</li>
+        </ul>
+        <figure>
+            <img class="cover place right" src="img/idt1-l0-10a.png" alt="" width="55%">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>Arduino project presentation</h2>
+        <ul>
+            <li>Design and Build</li>
+            <li>Arduino Sketch</li>
+            <li>Functionality and Testing</li>
+            <li>Documentation<br>and Presentation</li>
+            <li>Teamwork and Creativity</li>
+        </ul>
+        <figure>
+            <img class="cover place right" src="img/idt1-l0-10b.png" alt="" width="55%">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>App design – wireframe</h2>
+        <ul>
+            <li>Problem definition</li>
+            <li>Target Audience</li>
+            <li>Wireframing</li>
+        </ul>
+        <figure>
+            <img class="cover place right" src="img/idt1-l0-10c.png" alt="" width="55%">
+        <figure>
+    </section>
+
+<!--
+#####
+Slide - Use of GenAI Tools
+#####
+-->
+    <section class="slide">
+        <h2>Use of GenAI</h2>
+        <p>See Table<br>in Course book (p. 11)</p>
+        <figure>
+            <img class="place right" src="img/idt1-l0-9.png" alt="BA Digital Society" width="65%">
+        <figure>
+    </section>
+
+<!--
+#####
+Slide - Course Team
+#####
+-->    
+    <section class="slide">
+        <h2>Course Team</h2>
+        <ul>
+            <li>Nada Naguib Mostafa (Teaching Fellow (Department of Philosophy)</li>
+            <li>Nino Luijpen (Teaching Fellow (Department of Society Studies)</li>
+            <li>Dr Arnoud Wils <em>(coordination)</em></li>
+        </ul>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="./shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+<!--
+#####
+Slide - Course Team
+#####
+-->    
+    <section class="slide">
+        <h2>Tutorial 1 - <mark>Digital literacy</mark></h2>
+    </section>
+
+    <section class="slide">
+        <h2>Digital literacy</h2>
+        <figure>
+            <img class="cover place left" src="img/idt1-l0-14.png" alt="">
+        <figure>
+        <div id="step1" class="step"><strong>1</strong> - Need for a <mark>digital skills</mark> course?
+            <ul>
+                <li><i>digital natives</i></li>
+            </ul>
+        </div>
+        <style type="text/css">
+            #step1 {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 400px; left: 80px;
+                width: 300px;
+                height: 120px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.8em;
+            }
+            .step li::before {
+                position: relative;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">The myth of the <mark>digital native</mark></h2>
+        <figure>
+            <img class="cover width" src="img/idt1-l0-19.png" alt="BA Digital Society">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>Digital literacy</h2>
+        <figure>
+            <img class="cover place left" src="img/idt1-l0-14.png" alt="">
+        <figure>
+        <div id="step2" class="step"><strong>2</strong> - What are <mark>digital skills?</mark>
+            <ul>
+                <li><i>DigComp 2.2</i></li>
+                <li><i>...</i></li>
+            </ul>  
+        </div>
+        <style type="text/css">
+            #step2 {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 350px; left: 240px;
+                width: 300px;
+                height: 120px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.8em;
+            }
+            .step li::before {
+                position: relative;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>What are <mark>digital skills</mark></h2>
+        <blockquote>
+            <div class="columns two" style="line-height: 1.5;">
+                <p>the confident, critical and responsive use of, and engagement with, digital technologies for learning, at work, and for participation in society<br>(European Commission, 2019)</p>
+            </div>
+        </blockquote>
+        <figure>
+            <img class="cover height" src="img/idt1-l0-17.png" alt="BA Digital Society">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2><mark>DigComp 2.2</mark></h2>
+        <div style="font-size: 0.8em;">
+        <ul>
+            <strong>Information and data literacy</strong>
+            <li>Evaluating data, information and digital content</li>
+        </ul>
+        <ul>
+            <strong>Communication and collaboration</strong>
+            <li>Engaging in citizenship through digital technologies</li>
+            <li>Netiquette</li>
+        </ul>
+        <ul>
+            <strong>Safety</strong>
+            <li>Protecting personal data and privacy</li>
+            <li>Protecting health and well-being</li>
+        </ul>
+        </div>
+        <figure>
+            <img class="cover place right" src="img/idt1-l0-20.png" alt="BA Digital Society">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>Digital literacy</h2>
+        <figure>
+            <img class="cover place left" src="img/idt1-l0-14.png" alt="">
+        <figure>
+        <div id="step3" class="step"><strong>3</strong> - <mark>Challenges</mark> of the digital skills gap?
+            <ul>
+                <li><i>democratic values</i></li>
+                <li><i>economic challenges</i></li>
+                <li><i>...</i></li>
+            </ul>
+        </div>
+        <style type="text/css">
+            #step3 {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 300px; left: 400px;
+                width: 300px;
+                height: 120px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.8em;
+            }
+            .step li::before {
+                position: relative;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Digital skills <mark>gap</mark> ?</h2>
+        <figure>
+            <img class="cover width" src="img/idt1-l0-18.png" alt="BA Digital Society">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>Digital literacy</h2>
+        <figure>
+            <img class="cover place left" src="img/idt1-l0-14.png" alt="">
+        <figure>
+        <div id="step4" class="step"><strong>4</strong> - <mark>Roadmap</mark> for a digital skills strategy
+            <ul>
+                <li><i>inventory</i></li>
+                <li><i>education</i></li>
+                <li><i>...</i></li>
+            </ul>            
+        </div>
+        <style type="text/css">
+            #step4 {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 200px; left: 560px;
+                width: 300px;
+                height: 120px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.8em;
+            }
+            .step li::before {
+                position: relative;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="columns two">Individuals with basic or above basic digital skills</mark></h2>
+        <p>(Eurostat, 2021)</p>
+        <figure>
+            <img class="place right" src="img/idt1-l0-15.png" alt="BA Digital Society" width="50%">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2 class="columns two">Individuals with basic or above basic digital skills, by socioeconomic status</mark></h2>
+        <p>(Eurostat, 2021)</p>
+        <figure>
+            <img class="place right" src="img/idt1-l0-16.png" alt="BA Digital Society" width="50%">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>Roadmap for a digital skills strategy: <mark>education</mark></h2>
+    </section>
+
+    <section class="slide">
+        <h2>Case study: <mark>AI</mark></h2>
+    </section>
+
+    <section class="slide">
+        <h2>Case study: AI</h2>
+        <p class="columns two">As the large language model processes this set of words, it produces a vector — or list of values = word embedding — and adjusts it based on each word’s proximity in the training data.</p>
+        <figure>
+            <img class="cover place right" src="img/idt1-l0-21.png" alt="BA Digital Society">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <h2>Case study: AI</h2>
+        <p class="columns two">By reducing the hundreds of values each embedding represents to just two dimensions, we can see the distances between these words more clearly.</p>
+        <figure>
+            <img class="cover place right" src="img/idt1-l0-22.png" alt="BA Digital Society">
+        <figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="img/idt1-l0-23.jpeg" alt="BA Digital Society">
+        <figure>
+    </section>
+
+</body>
+</html>

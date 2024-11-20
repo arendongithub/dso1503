@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Introduction to Digital Technologies I - Lecture 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="./shower/themes/ribbon-orig/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Introduction to Digital Technologies I - Lecture 2</h1>
+    </header>
+
+<!--
+#####
+Slide - Splash
+#####
+-->
+
+    <section class="slide" id="cover">
+        <h2>Computer says 01101110 01101111</h2>
+        <p>Introduction to Digital Technologies I - Lecture 2</p>
+        <figure>
+            <img class="cover width" src="https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </figure>
+        <style>
+            #cover h2 {
+                margiIntroductory n: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - Intersection of Engineering, Mathematics and Electricity
+#####
+-->
+
+    <section class="slide">
+        <h2>Computers: an engineering, electricity and mathematics blend</h2>
+        <figure>
+            <img class="cover place bottom" src="img/intersection.png" alt="Computers: an engineering, electricity and mathematics blend" >
+        </figure> 
+    </section>
+
+<!--
+#####
+Slide - Intersection of Engineering, Mathematics and Electricity
+#####
+-->
+
+    <section class="slide">
+        <h2>Computers: blending <mark>Von Neumann architecture</mark>, <mark>electrical circuits</mark> and <mark>binary logic</mark></h2>
+        <figure>
+            <img class="cover place bottom" src="img/intersection.png" alt="Computers: an engineering, electricity and mathematics blend" >
+        </figure> 
+    </section>
+
+<!--
+#####
+SECTION Slide - Binary logic
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Binary logic</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+
+<!--
+#####
+Slide - Leibnitz
+#####
+-->
+
+    <section class="slide">
+        <h2>Gottfried Wilhelm Leibnitz</h2>
+        <div class="columns two">
+            <ul>
+                <li>invented the binary number system</li>
+            </ul>
+        <figure>
+            <img class="place right" src="img/leibnitz-2.png" alt="Leibnitz's step reckoner" width="50%">
+        </figure>
+        </div>
+        <figure>
+            <img class="place bottom" src="img/timeline-1900.png" alt="" width="80%">
+        </figure>
+        <div id="ttleibnitz">Leibnitz</div>
+        <style type="text/css">
+            #ttleibnitz {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 450px; left: 750px;
+                width: 80px;
+                height: 20px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.6em;
+                color: darkred;
+                text-align: center;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Binary numbers</h2>
+        <figure>
+            <img src="https://www.lifewire.com/thmb/7B8qFul5cQ2abdLhECcnD1y3Jcs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-binary-and-how-does-it-work-4692749-2-326f1a91eade4ce0be2c4626ddcfb726.png" alt="Binary number" width="80%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="margin-top: -50px; margin-bottom: 0px;">Binary numbers</h2>
+        <table><thead>
+          <tr>
+            <th>Decimal</th>
+            <th>Binary</th>
+          </tr></thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>0000</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0001</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>00<mark>1</mark>0</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>0011</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>0<mark>1</mark>00</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>0101</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>0110</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>0111</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><mark>1</mark>000</td>
+          </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <section class="slide">
+        <h2>Binary numbers</h2>
+        <figure>
+            <img src="https://www.lifewire.com/thmb/PWLYUzSwVIZJk6aEk_0y1MiLkik=/953x587/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-binary-and-how-does-it-work-4692749-4-5dd91a9060db4505a99591efd5db103b.png" alt="Binary number" width="80%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>George Boole</h2>
+        <div class="columns two">
+            <p>Boole developed Boolean algebra, a fundamental concept in binary logic, which forms the foundation of digital circuit design and modern computer science.</p>
+        <figure>
+            <img class="place right" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Portrait_of_George_Boole.png" alt="George Boole" width="40%">
+        </figure>
+        </div>
+        <figure>
+            <img class="place bottom" src="img/timeline-1900.png" alt="" width="80%">
+        </figure>
+        <div id="ttboole">George Boole</div>
+        <style type="text/css">
+            #ttboole {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 450px; left: 850px;
+                width: 100px;
+                height: 20px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.6em;
+                color: darkred;
+                text-align: center;
+            }
+        </style>
+    </section>
+
+<!--
+#####
+SECTION Slide - Van Neumann architecture
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Von Neumann architecture</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - Charles Babbage
+#####
+-->
+
+    <section class="slide">
+        <h2 style="color: white;">Charles Babbage</h2>
+        <div class="columns two">
+        <p style="color: white;">difference engine</p>
+        <figure>
+            <img class="cover width" src="https://www.howitworksdaily.com/wp-content/uploads/2016/02/difference-engine.jpg" alt="Charles Babbage">
+        </figure>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Charles Babbage</h2>
+        <div class="columns two">
+            <ul>
+                <li>analytical engine</li>
+                <li>mechanical general purpose computer</li>
+                <li>input to the machine provided by punched cards</li>
+            </ul>
+        <figure>
+            <img class="place right" src="https://assets.orf.at/mims/2022/39/48/crops/w=1280,q=90/1509808_bigpicture_548848_science_illustration_xx_image-210-211_03442.jpg?s=a0d1ed979917d7012f9cb2688c55d6b81e261e5f" alt="Charles Babbage" width="50%" style="margin-right: 50px">
+        </figure>
+        </div>
+        <figure>
+            <img class="place bottom" src="img/timeline-1900.png" alt="" width="80%">
+        </figure>
+        <div id="ttbabbage">Ananlytical Engine</div>
+        <style type="text/css">
+            #ttbabbage {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 450px; left: 800px;
+                width: 150px;
+                height: 20px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.6em;
+                color: darkred;
+                text-align: center;
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - ENIAC
+#####
+-->
+
+    <section class="slide">
+        <h2>ENIAC</h2>
+        <div class="columns two">
+            <ul>
+                <li>Electronic Numerical Integrator and Calculator</li>
+                <li>a <mark>fixed-program</mark> computer</li>
+                <li>the machine had to be physically rewired in order to perform different tasks</li>
+            </ul>
+        <figure>
+            <img class="place right" src="https://cdn.britannica.com/95/170195-050-EFCB2F83/ENIAC-1946.jpg" alt="ENIAC" width="50%">
+        </figure>
+        </div>
+        <figure>
+            <img class="place bottom" src="img/timeline+1900.png" alt="" width="80%">
+        </figure>
+        <div id="tteniac">ENIAC</div>
+        <style type="text/css">
+            #tteniac {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 450px; left: 350px;
+                width: 100px;
+                height: 20px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.6em;
+                color: darkred;
+                text-align: center;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Von Neumann architecture</h2>
+        <!--img class="cover width place bottom" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Von_Neumann_Architecture.svg" height="70%"-->
+        <img class="cover" src="./img/von-neumann.png" style="margin-top: 50px;">
+    </section>
+
+
+    <section class="slide">
+        <h2>EDVAC</h2>
+        <div class="columns two">
+        <img class="cover height place right" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Edvac.jpg">
+        <ul>
+            <li>implemented the concept of a <mark>stored program</mark></li>
+            <li>the task that is to be computed can be changed by placing a new program in the memory of the computer</li>
+        </ul>
+        </div>
+        <figure>
+            <img class="place bottom" src="img/timeline+1900.png" alt="" width="80%">
+        </figure>
+        <div id="ttedvac">EDVAC</div>
+        <style type="text/css">
+            #ttedvac {
+                border-radius: 25px;
+                padding: 10px;
+                position: absolute;
+                top: 450px; left: 350px;
+                width: 100px;
+                height: 20px;
+                background: #efefef;
+                opacity: 0.8;
+                line-height: 1.2;
+                font-size: 0.6em;
+                color: darkred;
+                text-align: center;
+            }
+        </style>
+    </section>
+
+<!--
+#####
+SECTION Slide - Electrical circuis
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Circuits and binary logic</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - Claude Shannon
+#####
+-->
+
+    <section class="slide">
+        <h2>Claude Shannon</h2>
+        <div class="columns two">
+            <p></p>
+        <figure>
+            <img class="cover" src="https://jellyfish.news/wp-content/uploads/2021/06/Claude-Shannon_2880_Lede-scaled.jpg" alt="Claude Shannon">
+        </figure>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2></h2>
+        <figure>
+            <img class="cover width" src="./img/circuit-1-0.png" alt="">
+        </figure>
+    </section>
+
+<!--
+#####
+Slide - AND | OR electric switches
+#####
+-->
+
+    <section class="slide">
+        <h2>AND</h2>
+        <div class="columns two">
+            <ul class="next">
+                <li>switches are connected <i>in series</i></li>
+                <li><mark>and</mark> logic</li>
+            </ul>
+            <div style="margin-top: -100px">
+                <img src="./img/circuit-1.png" alt="" width="100%">
+                <img class="next" src="./img/circuit-2.png" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>OR</h2>
+        <div class="columns two">
+            <ul class="next">
+                <li>switches are connected <i>in parallel</i></li>
+                <li><mark>or</mark> logic</li>
+            </ul>
+            <div style="margin-top: -150px">
+                <img src="./img/circuit-3.png" alt="" width="100%">
+                <img class="next" src="./img/circuit-4.png" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+
+<!--
+#####
+Slide - Buying a cat
+#####
+-->
+
+    <section class="slide">
+        <h2>I want a new cat</h2>
+        <figure>
+            <img class="cover width" src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>I want a new cat</h2>
+        <ul>
+            <li>a male cat <mark>AND</mark> neutered <mark>AND</mark> either white <mark>OR</mark> brown</li>
+            <li><mark>OR</mark> a female cat <mark>AND</mark> neutered <mark>AND</mark> any color but white</li>
+            <li><mark>OR</mark> any cat as long as it’s black</li>
+        </ul>
+    </section>
+
+    <section class="slide clear">
+        <h2 style="margin-top: -50px">I want a new cat</h2>
+        <figure>
+            <img class="cover" src="./img/cat-0.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <h2 style="margin-top: -50px">I want a new cat</h2>
+        <figure>
+            <img class="cover" src="./img/cat-1.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <h2 style="margin-top: -50px">I want a new cat</h2>
+        <figure>
+            <img class="cover" src="./img/cat-2.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <h2 style="margin-top: -50px">I want a new cat</h2>
+        <figure>
+            <img class="cover" src="./img/cat-3.png" alt="">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Combining switches into gates</h2>
+        <figure>
+            <img class="cover width" src="https://images.pexels.com/photos/28587006/pexels-photo-28587006/free-photo-of-british-guard-at-buckingham-palace.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>AND gate</h2>
+        <div class="columns two">
+            <img src="https://www.build-electronic-circuits.com/wp-content/uploads/2022/09/Logic-symbol-AND-gate-text.png">
+            <table class="next"><thead>
+              <tr style="background-color: #efefef;">
+                <th>Input A</th>
+                <th>Input B</th>
+                <th>Output Q</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>OR gate</h2>
+        <div class="columns two">
+            <img src="https://www.build-electronic-circuits.com/wp-content/uploads/2022/09/Logic-symbol-OR-gate-text.png">
+            <table class="next"><thead>
+              <tr style="background-color: #efefef;">
+                <th>Input A</th>
+                <th>Input B</th>
+                <th>Output Q</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>XOR gate</h2>
+        <div class="columns two">
+            <img src="https://www.build-electronic-circuits.com/wp-content/uploads/2022/09/Logic-symbol-XOR-gate-text.png">
+            <table class="next"><thead>
+              <tr style="background-color: #efefef;">
+                <th>Input A</th>
+                <th>Input B</th>
+                <th>Output Q</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>NOT gate</h2>
+        <div class="columns two">
+            <img src="https://www.build-electronic-circuits.com/wp-content/uploads/2022/09/Logic-symbol-NOT-gate-inverter-text.png">
+            <table class="next"><thead>
+              <tr style="background-color: #efefef;">
+                <th>Input A</th>
+                <th>Output Q</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>NAND gate</h2>
+        <div class="columns two">
+            <img src="https://www.build-electronic-circuits.com/wp-content/uploads/2022/09/Logic-symbol-AND-gate-text.png">
+            <table class="next"><thead>
+              <tr style="background-color: #efefef;">
+                <th>Input A</th>
+                <th>Input B</th>
+                <th>Output Q</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>NAND gates are universal gates</h2>
+            <table class="next"><thead>
+              <tr style="background-color: #efefef;">
+                <th>Desired gate</th>
+                <th>NAND construction</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/NOT_ANSI_Labelled.svg/240px-NOT_ANSI_Labelled.svg.png"></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NOT_from_NAND.svg/240px-NOT_from_NAND.svg.png"></td>
+              </tr>
+              <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/AND_ANSI_Labelled.svg/240px-AND_ANSI_Labelled.svg.png"></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/AND_from_NAND.svg/400px-AND_from_NAND.svg.png"></td>
+              </tr>
+          </tbody>
+          </table>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover height" src="./img/nand2tetris-site.png">
+        </figure>
+    </section>
+
+<!--
+#####
+SECTION Slide - Logic with combined gates
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Logic with combined gates</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - Logic with gates
+#####
+-->
+
+    <section class="slide">
+        <h2>Controlling a calculator display<br>with <mark>logic gates</mark></h2>
+        <figure>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreepngimg.com%2Fthumb%2Fcalculator%2F7-calculator-png-image.png&f=1&nofb=1&ipt=ddec6b40429a35c70bef7c047ca1f2fa712a5d64c7316a3ef7c948814bedb4c9&ipo=images" width="40%">
+            <img class="place right" src="./img/digit-7.png" width="20%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Controlling a calculator display with logic gates</h2>
+        <figure>
+            <img class="cover place bottom" src="./img/calc-3.png" alt="" width="80%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Controlling a calculator display with logic gates</h2>
+        <figure>
+            <img class="cover place bottom" src="./img/calc-7.png" alt="" width="80%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Controlling a calculator display with logic gates</h2>
+        <figure>
+            <img class="cover place bottom" src="./img/calc-2.png" alt="" width="80%">
+        </figure>
+    </section>
+
+<!--
+#####
+SECTION Slide - Arithmetic with combined gates
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Arithmetic with combined gates</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!--
+#####
+Slide - Arithmetic with gates
+#####
+-->
+
+ <section class="slide">
+        <h2>Adding one bit numbers</h2>
+        <figure>
+            <img class="cover" src="./img/halfadder.png" alt="transistor" height="60%">
+        </figure>
+        <div class="and next" id="adda">1</div>
+        <div class="and next" id="addb">0</div>
+        <div class="and next" id="addxor">1</div>
+        <div class="and next" id="addand">0</div>
+        <div class="and next" id="addc">0</div>
+        <div class="and next" id="addd">1</div>
+        <style type="text/css">
+            .and {
+                padding: 5px;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                background: white;
+                font-size: 1.8em;
+                font-weight: bold;
+                border-width: 1px;
+                border-style: solid;
+                color: darkred;
+                text-align: center;
+                vertical-align: middle;
+            }
+            #adda {
+                top: 140px; left: 260px;
+            }
+            #addb {
+                top: 200px; left: 260px;
+            }
+            #addc {
+                top: 450px; left: 580px;
+            }
+            #addd {
+                top: 450px; left: 650px;
+            }
+            #addxor {
+                top: 160px; left: 580px;
+            }
+            #addand {
+                top: 320px; left: 580px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Adding one bit numbers</h2>
+        <figure>
+            <img class="cover" src="./img/halfadder.png" alt="transistor" height="60%">
+        </figure>
+        <div class="and next" id="adda">1</div>
+        <div class="and next" id="addb">1</div>
+        <div class="and next" id="addxor">0</div>
+        <div class="and next" id="addand">1</div>
+        <div class="and next" id="addc">1</div>
+        <div class="and next" id="addd">0</div>
+        <style type="text/css">
+            .and {
+                padding: 5px;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                background: white;
+                font-size: 1.8em;
+                font-weight: bold;
+                border-width: 1px;
+                border-style: solid;
+                color: darkred;
+                text-align: center;
+                vertical-align: middle;
+            }
+            #adda {
+                top: 140px; left: 260px;
+            }
+            #addb {
+                top: 200px; left: 260px;
+            }
+            #addc {
+                top: 450px; left: 580px;
+            }
+            #addd {
+                top: 450px; left: 650px;
+            }
+            #addxor {
+                top: 160px; left: 580px;
+            }
+            #addand {
+                top: 320px; left: 580px;
+            }
+        </style>
+    </section>
+
+<!--
+#####
+SECTION Slide - Logic with combined gates
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>IA = Arithmetic</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <iframe class="cover" width="100%" height="100%" src="https://ig.ft.com/generative-ai/"></iframe>
+    </section>
+
+<!--
+#####
+SECTION Slide - Combining gates into circuits
+#####
+-->
+
+
+    <section class="slide">
+        <h2 style="color: white;">Combining gates into circuits</h2>
+        <figure>
+            <img class="cover width" src="https://images.pexels.com/photos/28587006/pexels-photo-28587006/free-photo-of-british-guard-at-buckingham-palace.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Vacuum Tubes</h2>
+        <figure>
+            <img class="cover" src="./img/vacuum-tube-1.png" alt="Konrad Zuse">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>From Vacuum tube to Transistor</h2>
+        <figure>
+            <img class="cover place right" src="https://www.redsharknews.com/hubfs/Valves_to_microchips-jpg.jpeg" alt="transistor" width="50%">
+        </figure>
+    </section>
+
+
+    <section class="slide">
+        <h2>Integrated circuits</h2>
+        <figure>
+            <img class="cover" src="https://www.build-electronic-circuits.com/wp-content/uploads/2023/03/74x00_package-and-pinout.png" height="80%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Arduino Microntroller</h2>
+        <div class="spotlight" style="--spotlight-opacity: 0.3; --spotlight-left: 100px; --spotlight-top: -50px;"></div>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1603732551658-5fabbafa84eb?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </figure>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="./shower/shower.js"></script>
+
+
+</body>
+</html>
