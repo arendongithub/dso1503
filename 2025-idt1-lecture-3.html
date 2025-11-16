@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Getting started with Arduino</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="./shower/themes/ribbon-orig/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+        .overlay {
+            border-radius: 25px;
+            padding: 10px;
+            position: absolute;
+            background: #efefef;
+            opacity: 0.7;
+            line-height: 1.5;
+        }
+        .textbox-r {
+            position: absolute;
+            top: 400px; left: 100px;
+            width: 500px;
+            height: 150px;
+            background-color: white;
+            opacity: 70%;
+            font-size: 0.9em;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Introduction to Digital Technologies I</h1>
+        <p>Lecture 3</p>
+    </header>
+
+<!-- 
+#####
+# Cover Slide
+#####
+-->
+
+    <section class="slide" id="cover">
+        <h2>Getting started with Arduino</h2>
+        <p>Lecture 3 - 18 November 2025</p>
+        <figure>
+            <img class="cover width" src="https://spectrum.ieee.org/media-library/photo-of-the-arduino-core-team.jpg?id=25565923&width=2400&height=1800" alt="The Arduino Team">
+            <figcaption class="copyright right white">
+                <a href="https://spectrum.ieee.org/the-making-of-arduino">spectrum.ieee.org</a>.
+            </figcaption>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+
+<!--
+#####
+SECTION 1 - What is Arduino
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>What is Arduino and Why It Matters</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!-- 
+#####
+# Slide - What is Arduino
+#####
+-->
+    <section class="slide">
+        <h2 style="color: white;">What is Arduino?</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-8.jpg" alt="Arduino Microprocessor">
+            <div class="columns three">
+                <p style="color: white">Arduino is an <mark>open-source</mark> electronics platform consisting of both <mark>hardware</mark> (programmable boards) and <mark>software</mark> (IDE)</p>
+                <p></p>
+                <p></p>
+            </div>
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>What is Arduino?</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-9.jpg" alt="Arduino Microprocessor">
+            <div class="columns two">
+                <p>Bridge between the <mark>digital</mark> world (code) and <mark>physical</mark> world (sensors, motors, lights)</p>
+            </div>
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Why it matters</h2>
+        <ul>
+            <li>Low barrier to entry</li>
+            <li class="next">Rapid prototyping</li>
+            <li class="next">Problem-solving skills</li>
+            <li class="next">Open source</li>
+        </ul>
+    </section>
+
+<!--
+#####
+SECTION 2 - The History of Arduino
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>History of Arduino</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!-- 
+#####
+# Slide - History
+#####
+-->
+
+    <section class="slide">
+        <h2 style="color: white;">Ivrea</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-11.jpg" alt="Ivrea">
+        </figure>
+        <div id="ivrea">
+            <img src="img/arduino-12.png" alt="Ivrea" width="250px">
+        </div>
+        <style type="text/css">
+            #ivrea {
+                position: absolute;
+                top: 300px; left: 750px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Interaction Design Institute Ivrea</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-10.jpg" alt="Interaction Design Institute Ivrea">
+            <figcaption class="copyright right white">
+                <a href="https://commons.wikimedia.org/wiki/File:Interaction_Design_Institute_Ivrea_Building_(2001-2005).jpg">Wikimedia Commons</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Bar di Re Arduino</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-7.jpeg" alt="Interaction Design Institute Ivrea">
+        </figure>
+    </section>
+
+
+    <section class="slide">
+        <h2>Parallax BASIC Stamp</h2>
+        <div class="columns two">
+            <ul>
+                <li>California company Parallax</li>
+                <li>Circuit board, (power supply, a microcontroller, memory, and input/output ports for attaching hardware)</li>
+                <li>BASIC programming language</li>
+            </ul>
+        </div>
+        <figure>
+            <img class="cover place right" src="https://media.parallax.com/wp-content/uploads/2020/06/26130809/27807a.png.webp" alt="Parallax BASIC Stamp" width="50%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2><mark>Processing IDE</mark></h2>
+        <iframe class="cover" width="100%" height="100%" src="https://processing.org/examples/radialgradient.html" frameborder=0></iframe>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">The first prototype board (2005)</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-13.webp" alt="First prototype Arduino Board (2005)">
+            <figcaption class="copyright right white">
+                <a href="https://spectrum.ieee.org/the-making-of-arduino">Spectrum IEEE</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Most influential open-source hardware movement</h2>
+        <figure>
+            <img class="cover" src="https://logos-world.net/wp-content/uploads/2022/01/Creative-Commons-CC-Logo.png" alt="Creative Commons" width="70%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Arduino in education</h2>
+        <figure>
+            <img class="cover width" src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https://www.elektormagazine.com/assets/upload/images/17/220452-002-94-original-ae-ctcgo-product-3students-04jpg.png" alt="Arduino in education" width="70%">
+            <figcaption class="copyright right white">
+                <a href="https://www.elektormagazine.com/magazine/elektor-268/61220">Elektor Magazine</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>A Family of Boards</h2>
+        <figure>
+            <img class="cover" src="img/arduino-14.jpg" alt="Arduino Boards">
+            <figcaption class="copyright right white">
+                <a href="https://www.roboticlab.eu/homelab/en/iot-open/getting_familiar_with_your_hardware_rtu_itmo_sut/arduino_and_arduino_101_intel_curie/overview_of_the_hardware_device">roboticlab.eu</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Google’s Android ADK</h2>
+        <div class="columns two">
+            <div></div>
+            <div>
+                <ul>
+                    <li>Arduino-based developer board for Android</li>
+                    <li>Accessory Development Kit</li>
+                    <li>Android phone interacting with motors, sensors, and other devices</li>
+                </ul>
+            </div>
+        </div>
+        <img class="place left bottom" src="img/arduino-15.png" alt="Arduino Boards" width="50%">
+    </section>
+
+<!-- 
+#####
+# Slide - Real-world applications
+#####
+-->
+
+
+<!--
+#####
+SECTION 3 - Hardware Fundamentals
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Hardware Fundamentals</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!-- 
+#####
+# Slide - Arduino Microprocessor
+#####
+-->
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-r">
+            <img src="img/arduino-17.png" alt="arrow right" width="150px">
+        </div>
+        <div class="next textbox-r">
+            <p><mark>Digital pins</mark> Use these pins with <code>digitalRead(), digitalWrite()</code>, and <code>analogWrite()</code></p>
+        </div>
+        <style type="text/css">
+            #arrow-r {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <!--
+    Digital vs Analog pins
+    Input vs Output pins
+    -->
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Power supply</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-4.png" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Arduino Microprocessor with peripherals</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino with sensors">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@nahakiole">Robin Glauser - Unsplash</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Arduino Breadboard</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959188721-5ca7aeec6450?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Breadboard">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Arduino Breadboard layout</h2>
+        <figure>
+            <img src="img/arduino-1.jpg" alt="Arduino Microprocessor" width="70%">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Wiring</h2>
+        <div class="columns two">
+            <p>Power supply to breadboard - <mark>best practice</mark></p>
+        </div>
+        <figure>
+            <img class="cover height place right" src="img/arduino-3.png" alt="Arduino Microprocessor">
+        </figure>
+    </section>
+
+<!--
+#####
+SECTION 3 - Software Environment (IDE)
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Software Environment (IDE)</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2><mark>https://www.arduino.cc/en/software/</mark></h2>
+        <iframe class="cover" width="100%" height="100%" src="https://www.arduino.cc/en/software/" frameborder=0></iframe>
+    </section>
+
+    <section class="slide">
+        <h2>Arduino IDE</h2>
+        <div class="columns two">
+            <figure>
+                <img src="img/arduino-6.png" alt="Arduino Microprocessor" width="110%">
+            </figure>
+            <ol style="margin-top: -50px;">
+                <li><mark>Verify</mark> your program (= sketch)</li>
+                <li class="next"><mark>Select</mark> your board.</li>
+                <li class="next"><mark>Upload</mark> your sketch to the Arduino board.</li>
+                <li class="next"><mark>View</mark> Serial Monitor output</li>
+                <li class="next"><mark>Setup</mark> block executes only once, when the Arduino is powered on.</li>
+                <li class="next"><mark>Loop</mark> block with the code is executed over and over again.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 style="text-align: right;">Arduino powered by laptop</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-2.png" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <!--
+    - Simple programming concepts they'll need:
+          - Libraries
+          - Variables and data types
+          - Functions
+          - Control structures (if/else, loops)
+    -->
+
+    <!--
+    - Tinkercad
+    -->
+
+    <section class="slide">
+        <h2>Arduino Breadboard with LED</h2>
+        <div class="columns two">
+            <figure>
+                <img src="img/arduino-5.png" alt="Arduino Microprocessor" width="110%">
+            </figure>
+            <code style="background-color: white;">
+                <span style="color: olive;">int</span> pinLEDred=13;<br><br>
+                <span style="color: darkred;">pinMode</span>(pinLEDred, OUTPUT);<br><br>
+                <span style="color: darkred;">digitalWrite</span>(pinLEDred,HIGH);<br><br>
+            </code>
+        </div>
+    </section>
+
+    <!--
+    - Common components they'll use:
+          - LEDs and resistors (Ohm's law basics)
+          - Sensors (temperature, light, ultrasonic)
+          - Motors and servos (mention need for external power)
+    -->
+
+    <!--
+    - Share code sheet blinking led
+    -->
+
+<!--
+#####
+SECTION Slide - 0 - Radio Frequency Identification (RFID)?
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Getting started with Arduino</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!-- 
+#####
+# Slide - RFID Use
+#####
+-->
+    <section class="slide">
+        <h2 style="color: white;">Access Control</h2>
+        <div class="columns two">
+            <figure>
+                <img class="cover width" src="https://images.pexels.com/photos/13657444/pexels-photo-13657444.jpeg" alt="Acces Control">
+            </figure>
+            <figcaption class="copyright right white">
+                <a href="https://www.pexels.com/photo/man-hand-holding-access-card-over-reader-13657444/">pexels.com</a>.
+            </figcaption>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Parking Management</h2>
+        <div class="columns two">
+            <figure>
+                <img class="cover width" src="https://rfidtag.com/wp-content/uploads/2025/03/Passive-RFID-tags-in-parking-management.webp" alt="Parking Management">
+            </figure>
+            <figcaption class="copyright right white">
+                <a href="https://rfidtag.com/what-are-passive-rfid-tags-benefits-application-and-more/">rfid.com</a>.
+            </figcaption>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Logistics Tracking</h2>
+        <div class="columns two">
+            <figure>
+                <img class="cover width" src="https://rfidtag.com/wp-content/uploads/2025/03/Passive-RFID-tag-utilized-in-logistic-tracking.webp" alt="Logistics Tracking">
+            </figure>
+            <figcaption class="copyright right white">
+                <a href="https://rfidtag.com/what-are-passive-rfid-tags-benefits-application-and-more/">rfid.com</a>.
+            </figcaption>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Healthcare Equipment Management</h2>
+        <div class="columns two">
+            <figure>
+                <img class="cover width" src="https://rfidtag.com/wp-content/uploads/2025/03/Passive-RFID-tags-used-in-healthcare-equipment-mangement.webp" alt="Healthcare Equipment Management">
+            </figure>
+            <figcaption class="copyright right white">
+                <a href="https://rfidtag.com/what-are-passive-rfid-tags-benefits-application-and-more/">rfid.com</a>.
+            </figcaption>
+        </div>
+    </section>
+
+<!-- 
+#####
+# Slide - Evolution of RFID
+#####
+-->
+    <section class="slide">
+        <h2>The evolution of RFID</h2>
+        <div style="width: 55%">
+            <ul>
+                <li><mark>1940</mark>RFID has its roots in the radar technology that emerged during World War II</li>
+                <li><mark>1948</mark>RFID invented (Harry Stockman)</li>
+                <li><mark>1987</mark>France introduces an RFID-based ‘electronic toll collection’ system</li>
+                <li><mark>Present</mark>RFID tech is pivotal to the Internet of Things and to ecommerce</li>
+            </ul>
+        </div>
+        <figure>
+            <img class="cover height place right" src="https://www.abr.com/wp-content/uploads/2016/09/Evolution-of-RFID-r3.jpg" alt="Evolution of RFID">
+        </figure>
+    </section>
+
+
+<!-- 
+#####
+# Slide - Agenda
+#####
+-->
+    <section class="slide">
+        <h2>Agenda for today</h2>
+        <ol>
+            <li>How does Radio Frequency Identification work?</li>
+            <li>Getting started with Arduino</li>
+            <li>Exploring RFID with Arduino</li>
+            <li>Hands-on</li>
+        </ol>
+    </section>
+
+
+<!--
+#####
+SECTION Slide - 1 - How does Radio Frequency Identification work?
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>How does Radio Frequency Identification (RFID) work?</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+
+<!-- 
+#####
+# Slide - RFID Reader and Tag
+#####
+-->
+    <section class="slide">
+        <div class="columns two">
+        <figure>
+            <h2>Reader <img src="pictures/rfid-27.png" width="50px"></h2>
+            <img src="https://imgaz.staticbg.com/images/oaupload/ser1/banggood/images/9A/A1/be97de9b-60df-48e9-9f51-af07a16f7aee.jpg" alt="RC522" width="75%">
+        </figure>
+        <figure>
+            <h2>Tag <img src="pictures/rfid-26.png" width="50px"></h2>
+            <img src="https://m.media-amazon.com/images/I/71mr97JqFUL.jpg" alt="RFID Tag" width="75%">
+        </figure>
+        </div>
+    </section>
+
+
+
+
+<!-- 
+#####
+# Slide - Electromagnetism
+#####
+-->
+    <section class="slide">
+        <h2>Side note 1 - Electromagnetism</h2>
+        <div class="columns two">
+            <figure>
+                <img class="cover" src="pictures/rfid-4.png" alt="Electromagnetism">
+            </figure>
+        </div>
+    </section>
+
+<!-- 
+#####
+# Slide - Electromagnetism in RFID Reader
+#####
+-->
+    <section class="slide">
+        <h2>RFID Reader</h2>
+        <ul>
+            <li>powers a coil</li>
+            <li>creates an electromagnetic field</li>
+        </ul>
+        <figure>
+            <img src="pictures/rfid-28.png" alt="Electromagnetism" width="60%">
+        </figure>
+    </section>
+
+<!-- 
+#####
+# Slide - Side note 2 - Induction
+#####
+-->
+    <section class="slide">
+        <h2>Side note 2 - Induction</h2>
+        <figure>
+            <img src="pictures/rfid-11.png" alt="Induction" width="70%">
+        </figure>
+        <div id="coiled-wire" class="overlay">
+            coiled wire
+        </div>
+        <div id="magnet-moving" class="overlay">
+            magnet moving towards coil
+        </div>
+        <div id="induced-voltage" class="overlay">
+            induced voltage in wire
+        </div>
+        <style type="text/css">
+            #coiled-wire {
+                position: absolute;
+                top: 150px; left: 100px;
+                width: 200px;
+                height: 50px;
+            }
+            #magnet-moving {
+                position: absolute;
+                top: 250px; left: 700px;
+                width: 200px;
+                height: 100px;
+            }
+            #induced-voltage {
+                position: absolute;
+                top: 450px; left: 100px;
+                width: 200px;
+                height: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Side note 2 - Induction</h2>
+        <figure>
+            <img src="pictures/rfid-29.png" alt="Induction" width="85%">
+        </figure>
+    </section>
+
+<!-- 
+#####
+# Slide - Induction in RFID Tag
+#####
+-->
+    <section class="slide">
+        <h2>RFID Tag</h2>
+        <ul>
+            <li>passive</li>
+            <li>powered by the RFID Reader using induction</li>
+        </ul>
+        <figure>
+            <img src="pictures/rfid-30.png" alt="Induction" width="85%">
+        </figure>
+    </section>
+
+
+<!-- 
+#####
+# Slide - Modulation
+#####
+-->
+    <section class="slide">
+        <h2>Modulation</h2>
+        <figure>
+            <img class="cover" src="pictures/rfid-20.png" alt="Modulation" height="90%">
+        </figure>
+        <div id="reader">
+            <img src="pictures/rfid-17.webp" width="150px">
+        </div>
+        <div id="tag">
+            <img src="pictures/rfid-18.webp" width="150px">
+        </div>
+        <style type="text/css">
+            #reader {
+                position: absolute;
+                top: 130px; left: 50px;
+            }
+            #tag {
+                position: absolute;
+                top: 300px; left: 800px;
+            }
+        </style>
+    </section>
+
+
+
+<!--
+#####
+SECTION Slide - 3 - How does Radio Frequency Identification work?
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Exploring RFID with Arduino</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+
+    <section class="slide">
+        <h2>Arduino IDE</h2>
+        <div class="columns two">
+            <figure>
+                <img src="pictures/rfid-35.png" alt="Arduino Microprocessor" width="110%">
+            </figure>
+            <ol style="font-size: 0.8em">
+                <li>Includes the <strong><mark>libraries</mark></strong> providing commands to communicate with the RFID reader.</li>
+                <li>Defining <strong><mark>variables</mark></strong>
+                    <ul>
+                        <li>Defines the pin numbers used for the RFID reader.</li>
+                        <li>Defines the pin number for an LED.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Arduino IDE</h2>
+        <div class="columns two">
+            <figure>
+                <img src="pictures/rfid-36.png" alt="Arduino Microprocessor" width="110%">
+            </figure>
+            <ol style="font-size: 0.8em">
+                <p><strong><mark>Setup</mark> block</strong></p>
+                <li>Starts serial communication.</li>
+                <li>Prints a message to the Serial Monitor.</li>
+                <li>Sets the LED pin (pin 2) as an output.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Arduino IDE</h2>
+        <div class="columns two">
+            <figure>
+                <img src="pictures/rfid-37.png" alt="Arduino Microprocessor" width="110%">
+            </figure>
+            <ol style="font-size: 0.8em">
+                <p><strong><mark>Loop</mark> block</strong></p>
+                <li>Checks if a new RFID card is within the reader's range using the NOT operator (!).</li>
+                <li>Sets the pinLED (pin 2) to HIGH, turning it on.</li>
+                <li>Loops through each byte of the UID, prints each byte in hexadecimal format.</li>
+                <li>Pauses for 1 second, before turning off the LED.</li>
+            </ol>
+        </div>
+    </section>
+
+<!--     <section class="slide">
+        <h2>Arduino Breadboard with LED</h2>
+        <figure>
+            <img src="pictures/rfid-38.png" alt="Arduino Microprocessor" width="100%%">
+        </figure>
+        <div id="resistor" class="overlay" style="font-size: 0.7em;">
+            Resistors are used to to adjust the voltage between the Arduino board and the NFC Reader.
+        </div>
+        <style type="text/css">
+            #resistor {
+                position: absolute;
+                top: 200px; left: 550px;
+                width: 300px;
+                height: 100px;
+                opacity: 0.9;
+            }
+        </style>
+    </section> -->
+
+    <section class="slide">
+        <h2 style="margin-top: -50px; margin-bottom: 5px;">Hexadecimal system</h2>
+        <table style="font-size: 0.8em">
+        <thead>
+          <tr>
+            <th>Decimal - Base-10</th>
+            <th>Binary - Base-2</th>
+            <th>Hexadecimal - Base-16</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>11</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>1010</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>1011</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>1100</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>1101</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>1110</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>1111</td>
+            <td>F</td>
+          </tr>
+        </tbody>
+        </table>
+                
+    </section>
+
+ <!--    <section class="slide">
+        <table style="font-size: 0.6em">
+        <thead>
+          <tr>
+            <th>Decimal</th>
+            <th>Binary</th>
+            <th>Hexadecimal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Base-10</td>
+            <td>Base-2</td>
+            <td>Base-16</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>11</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>100</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>101</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>110</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>111</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>1000</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>1001</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>1010</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>1011</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>1100</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>1101</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>1110</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>1111</td>
+            <td>F</td>
+          </tr>
+        </tbody>
+        </table>
+                
+    </section> -->
+
+<!--
+#####
+SECTION Slide - 4 - Hands-on
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Hands-on</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+
+    <section class="slide">
+        <h2>Instruction sheet<br>Arduino Sketches</h2>
+        <p style="font-size:1.5em">https://shorter.me/tSbG2</p>
+        <img class="place right" src="pictures/qr-to-gitlab.png" width="45%">
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="./shower/shower.js"></script>
+
+</body>
+</html>
