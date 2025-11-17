@@ -20,8 +20,17 @@
         .textbox-r {
             position: absolute;
             top: 400px; left: 100px;
-            width: 500px;
-            height: 150px;
+            width: 400px;
+            height: 100px;
+            background-color: white;
+            opacity: 70%;
+            font-size: 0.9em;
+        }
+        .textbox-l {
+            position: absolute;
+            top: 400px; left: 600px;
+            width: 400px;
+            height: 100px;
             background-color: white;
             opacity: 70%;
             font-size: 0.9em;
@@ -45,12 +54,12 @@
 -->
 
     <section class="slide" id="cover">
-        <h2>Getting started with Arduino</h2>
+        <h2>Getting started with <mark>Arduino</mark></h2>
         <p>Lecture 3 - 18 November 2025</p>
         <figure>
-            <img class="cover width" src="https://spectrum.ieee.org/media-library/photo-of-the-arduino-core-team.jpg?id=25565923&width=2400&height=1800" alt="The Arduino Team">
+            <img class="cover width" src="img/arduino-19.jpg" alt="Arduino">
             <figcaption class="copyright right white">
-                <a href="https://spectrum.ieee.org/the-making-of-arduino">spectrum.ieee.org</a>.
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>.
             </figcaption>
         </figure>
         <style>
@@ -113,16 +122,16 @@ SECTION 1 - What is Arduino
     <section class="slide">
         <h2 style="color: white;">What is Arduino?</h2>
         <figure>
-            <img class="cover width" src="img/arduino-8.jpg" alt="Arduino Microprocessor">
-            <div class="columns three">
-                <p style="color: white">Arduino is an <mark>open-source</mark> electronics platform consisting of both <mark>hardware</mark> (programmable boards) and <mark>software</mark> (IDE)</p>
-                <p></p>
-                <p></p>
-            </div>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959188721-5ca7aeec6450?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
             <figcaption class="copyright right white">
                 <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
             </figcaption>
         </figure>
+        <div class="columns three">
+            <p style="color: white">Arduino is an <mark class="next">open-source</mark> electronics platform consisting of both <mark class="next">hardware</mark> (programmable boards) and <mark class="next">software</mark> (IDE)</p>
+            <p></p>
+            <p></p>
+        </div>
     </section>
 
     <section class="slide">
@@ -216,6 +225,15 @@ SECTION 2 - The History of Arduino
         </figure>
     </section>
 
+    <section class="slide">
+        <h2 style="color: white;">Arduino Core Team</h2>
+        <figure>
+            <img class="cover width" src="https://spectrum.ieee.org/media-library/photo-of-the-arduino-core-team.jpg?id=25565923&width=2400&height=1800" alt="The Arduino Team">
+            <figcaption class="copyright right white">
+                <a href="https://spectrum.ieee.org/the-making-of-arduino">spectrum.ieee.org</a>.
+            </figcaption>
+        </figure>
+    </section>
 
     <section class="slide">
         <h2>Parallax BASIC Stamp</h2>
@@ -293,7 +311,10 @@ SECTION 2 - The History of Arduino
 # Slide - Real-world applications
 #####
 -->
-
+    <section class="slide">
+        <h2>Real-world applications</h2>
+        <iframe class="cover" width="100%" height="100%" src="https://www.youtube.com/embed/1LVTs1CeHe0?si=1oKPBotdK_Vjpnv2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 
 <!--
 #####
@@ -341,10 +362,218 @@ SECTION 3 - Hardware Fundamentals
             <img src="img/arduino-17.png" alt="arrow right" width="150px">
         </div>
         <div class="next textbox-r">
-            <p><mark>Digital pins</mark> Use these pins with <code>digitalRead(), digitalWrite()</code>, and <code>analogWrite()</code></p>
+            <p><mark>Digital pins</mark> Use these pins with <code>Read()</code>, and <code>Write()</code> functions.</p>
         </div>
         <style type="text/css">
             #arrow-r {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-r">
+            <img src="img/arduino-17.png" alt="arrow right" width="150px">
+        </div>
+        <div class="next textbox-r">
+            <p><mark>Pin 13 LED</mark> (built-in to your board). This LED is very useful for debugging.</p>
+        </div>
+        <style type="text/css">
+            #arrow-r {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-r">
+            <img src="img/arduino-17.png" alt="arrow right" width="150px">
+        </div>
+        <div class="next textbox-r">
+            <p><mark>Power LED</mark> Indicates that your Arduino is receiving power.</p>
+        </div>
+        <style type="text/css">
+            #arrow-r {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-r">
+            <img src="img/arduino-17.png" alt="arrow right" width="150px">
+        </div>
+        <div class="next textbox-r">
+            <p><mark>Arduino Microcontroller</mark> The heart of your board.</p>
+        </div>
+        <style type="text/css">
+            #arrow-r {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-r">
+            <img src="img/arduino-17.png" alt="arrow right" width="150px">
+        </div>
+        <div class="next textbox-r">
+            <p><mark>Analog in</mark> Use these pins with analogRead().</p>
+        </div>
+        <style type="text/css">
+            #arrow-r {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-r">
+            <img src="img/arduino-17.png" alt="arrow right" width="150px">
+        </div>
+        <div class="next textbox-r">
+            <p><mark>GND and 5V pins</mark> to provide +5V power and ground to your circuits.</p>
+        </div>
+        <style type="text/css">
+            #arrow-r {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Wiring</h2>
+        <div class="columns two">
+            <p>Power supply to breadboard - <mark>best practice</mark></p>
+        </div>
+        <figure>
+            <img class="cover height place right" src="img/arduino-3.png" alt="Arduino Microprocessor">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-l">
+            <img src="img/arduino-16.png" alt="arrow left" width="150px">
+        </div>
+        <div class="next textbox-l">
+            <p><mark>Power connector</mark> when you Arduino is not plugged into a USB port for power.</p>
+        </div>
+        <style type="text/css">
+            #arrow-l {
+                position: absolute;
+                top: 50px; left: 120px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-r">
+            <img src="img/arduino-16.png" alt="arrow left" width="150px">
+        </div>
+        <div class="next textbox-l">
+            <p><mark>TX and RX LEDs</mark> indicate communication with your computer.</p>
+        </div>
+        <style type="text/css">
+            #arrow-l {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-r">
+            <img src="img/arduino-16.png" alt="arrow left" width="150px">
+        </div>
+        <div class="next textbox-l">
+            <p><mark>USB port</mark> for powering your Arduino, and uploading your sketches.</p>
+        </div>
+        <style type="text/css">
+            #arrow-l {
+                position: absolute;
+                top: 50px; left: 720px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white; margin-top: -30px;">Arduino Board</h2>
+        <figure>
+            <img class="cover width" src="https://images.unsplash.com/photo-1649959168260-2eb9702d7b69?q=80&w=3169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arduino Microprocessor">
+            <figcaption class="copyright right white">
+                <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-l">
+            <img src="img/arduino-16.png" alt="arrow left" width="150px">
+        </div>
+        <div class="next textbox-l">
+            <p><mark>Reset button</mark> to reset the microcontroller.</p>
+        </div>
+        <style type="text/css">
+            #arrow-l {
                 position: absolute;
                 top: 50px; left: 720px;
             }
@@ -390,16 +619,6 @@ SECTION 3 - Hardware Fundamentals
         <h2>Arduino Breadboard layout</h2>
         <figure>
             <img src="img/arduino-1.jpg" alt="Arduino Microprocessor" width="70%">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Wiring</h2>
-        <div class="columns two">
-            <p>Power supply to breadboard - <mark>best practice</mark></p>
-        </div>
-        <figure>
-            <img class="cover height place right" src="img/arduino-3.png" alt="Arduino Microprocessor">
         </figure>
     </section>
 
@@ -455,6 +674,25 @@ SECTION 3 - Software Environment (IDE)
     </section>
 
     <section class="slide">
+        <h2 style="text-align: right; margin-top: 350px;">Arduino Library Manager</h2>
+        <figure>
+            <img class="cover width" src="https://docs.arduino.cc/static/6ba5c25722a5a434d64c19dc3855e164/29114/library-manager.png" alt="Arduino Library Manager">
+            <figcaption class="copyright right white">
+                <a href="https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2/?_gl=1*1vqf61n*_up*MQ..*_ga*OTY5NTIzNDg1LjE3NjMyODI4NjU.*_ga_NEXN8H46L5*czE3NjMyODU5MjckbzIkZzEkdDE3NjMyODYwNzgkajYwJGwwJGgxNzMzNzA2MzQx">docs.arduino.cc</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-l">
+            <img src="img/arduino-17.png" alt="arrow right" width="150px">
+        </div>
+        <style type="text/css">
+            #arrow-r {
+                position: absolute;
+                top: 350px; left: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
         <h2 style="text-align: right;">Arduino powered by laptop</h2>
         <figure>
             <img class="cover width" src="img/arduino-2.png" alt="Arduino Microprocessor">
@@ -462,6 +700,12 @@ SECTION 3 - Software Environment (IDE)
                 <a href="https://unsplash.com/@vishnumaiea">Vishnu Mohanan - Unsplash</a>
             </figcaption>
         </figure>
+    </section>
+
+    <section class="slide">
+        <h2><mark>https://www.tinkercad.com/</mark></h2>
+        <p>Open <mark><strong>https://shorter.me/2kYUK</strong></mark><p>
+        <iframe class="cover" width="100%" height="100%" src="https://www.tinkercad.com/" frameborder=0></iframe>
     </section>
 
     <!--
@@ -472,11 +716,221 @@ SECTION 3 - Software Environment (IDE)
           - Control structures (if/else, loops)
     -->
 
-    <section class="slide">
-        <h2><mark>https://www.tinkercad.com/</mark></h2>
-        <p>Open <mark><strong>https://shorter.me/2kYUK</strong></mark><p>
-        <iframe class="cover" width="100%" height="100%" src="https://www.tinkercad.com/" frameborder=0></iframe>
+<!--
+#####
+Slide - Blinking led code
+#####
+-->
+    <section class="slide clear">
+        <h2>Program structure</h2>
+        <div class="columns two">
+            <div>
+                <ul>
+                    <li>setup()</li>
+                    <li>loop()</li>
+                </ul>
+            </div>
+            <div style="line-height: 1.2; font-size: 0.8em; margin-top: -170px; margin-left: -100px;">
+                <code style="background-color: white;"><br>
+                    <span style="color: darkred;">// Give pin 13 a name.</span><br>
+                    <span style="color: olive;">int</span> led = 13;<br>
+                    <br>
+                    <span style="color: darkred;">// The setup routine runs once.</span><br>
+                    <mark><span style="color: olive;">void</span> setup()</mark> {<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// Initialize the digital pin as an output.</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;pinMode</span>(led, OUTPUT);<br>
+                    }<br>
+                    <br>
+                    <span style="color: darkred;">// The loop routine runs over and over again forever.</span><br>
+                    <mark><span style="color: olive;">void</span> loop()</mark> {<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// turn the LED on</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;digitalWrite</span>(led, HIGH);<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// wait for a second</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;delay</span>(1000);<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// turn the LED off</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;digitalWrite</span>(led, LOW);<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// wait for a second</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;delay</span>(1000);<br>
+                    }<br>
+                </code>
+            </div>
+        </div>
     </section>
+
+    <section class="slide">
+        <h2>Variables, Functions, Control Structures</h2>
+        <figure>
+            <img src="img/arduino-18.png" alt="Variables, Functions, Control Structures" width="75%" style="margin-left: auto; margin-right: auto; display: block;">
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <h2>Variable</h2>
+        <div class="columns two">
+            <div>
+                <ul>
+                    <li>Declaring a variable</li>
+                    <li>Initialising a variable</li>
+                    <li>Variable scope (local vs. global)</li>
+                </ul>
+            </div>
+            <div style="line-height: 1.2; font-size: 0.8em; margin-top: -170px; margin-left: -100px;">
+                <code style="background-color: white;"><br>
+                    <span style="color: darkred;">// Give pin 13 a name.</span><br>
+                    <mark><span style="color: olive;">int</span> led = 13;</mark><br>
+                    <br>
+                    <span style="color: darkred;">// The setup routine runs once.</span><br>
+                    <span style="color: olive;">void</span> setup() {<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// Initialize the digital pin as an output.</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;pinMode</span>(led, OUTPUT);<br>
+                    }<br>
+                    <br>
+                    <span style="color: darkred;">// The loop routine runs over and over again forever.</span><br>
+                    <span style="color: olive;">void</span> loop() {<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// turn the LED on</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;digitalWrite</span>(led, HIGH);<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// wait for a second</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;delay</span>(1000);<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// turn the LED off</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;digitalWrite</span>(led, LOW);<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// wait for a second</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;delay</span>(1000);<br>
+                    }<br>
+                </code>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide clear">
+        <h2>Function</h2>
+        <div class="columns two">
+            <div>
+                <ul>
+                    <li>= a piece of code that performs a specific task and may return a value</li>
+                    <li>Declaring vs. Calling a function</li>
+                    <li>Built in functions: pinMode(), digitalWrite(), delay(), </li>
+                </ul>
+            </div>
+            <div style="line-height: 1.2; font-size: 0.8em; margin-top: -170px; margin-left: -100px;">
+                <code style="background-color: white;"><br>
+                    <span style="color: darkred;">// Give pin 13 a name.</span><br>
+                    <span style="color: olive;">int</span> led = 13;<br>
+                    <br>
+                    <span style="color: darkred;">// The setup routine runs once.</span><br>
+                    <span style="color: olive;">void</span> setup() {<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// Initialize the digital pin as an output.</span><br>
+                    <mark><span style="color: olive;">&nbsp;&nbsp;pinMode</span>(led, OUTPUT);</mark><br>
+                    }<br>
+                    <br>
+                    <span style="color: darkred;">// The loop routine runs over and over again forever.</span><br>
+                    <span style="color: olive;">void</span> loop() {<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// turn the LED on</span><br>
+                    <mark><span style="color: olive;">&nbsp;&nbsp;digitalWrite</span>(led, HIGH);</mark><br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// wait for a second</span><br>
+                    <mark><span style="color: olive;">&nbsp;&nbsp;delay</span>(1000);</mark><br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// turn the LED off</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;digitalWrite</span>(led, LOW);<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// wait for a second</span><br>
+                    <span style="color: olive;">&nbsp;&nbsp;delay</span>(1000);<br>
+                    }<br>
+                </code>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Serial.write()</h2>
+        <div class="columns two">
+            <div>
+                <ul>
+                    <li>Writes data to the serial port.</li>
+                    <li>Consider using <code>Serial.write()</code> for debugging.</li>
+                </ul>
+            </div>
+            <div class="columns two">
+                <code style="background-color: white;">
+                    <span style="color: olive;">int</span> pinLEDred=13;<br><br>
+                    <span style="color: darkred;">// open serial port, set data rate to 9600 bps</span><br><br>
+                    Serial.begin(<span style="color: olive;">9600</span>);<br><br>
+                    Serial.println(<span style="color: darkred;">"LED is turned ON."</span>);
+                </code>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 style="text-align: right; margin-top: 350px;">Serial Monitor</h2>
+        <figure>
+            <img class="cover width" src="https://docs.arduino.cc/static/e787bbea82bbd7f55b1c41d1a4f1f323/c6720/serial-monitor.png" alt="Arduino Serial Monitor">
+            <figcaption class="copyright right white">
+                <a href="https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2/?_gl=1*1vqf61n*_up*MQ..*_ga*OTY5NTIzNDg1LjE3NjMyODI4NjU.*_ga_NEXN8H46L5*czE3NjMyODU5MjckbzIkZzEkdDE3NjMyODYwNzgkajYwJGwwJGgxNzMzNzA2MzQx">docs.arduino.cc</a>
+            </figcaption>
+        </figure>
+        <div id="arrow-l">
+            <img src="img/arduino-17.png" alt="arrow right" width="150px">
+        </div>
+        <style type="text/css">
+            #arrow-r {
+                position: absolute;
+                top: 300px; left: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Control structure</h2>
+        <div class="columns two">
+            <div>
+                <ul>
+                    <li>if, else, while</li>
+                    <li>a control block checks for a condition and executes the statement(s) accordingly</li>
+                </ul>
+            </div>
+            <div class="columns two">
+                <code style="background-color: white;">
+                  if (pinStatus == <span style="color: olive;">1</span>) {<br>
+                    &nbsp;&nbsp;Serial.println(<span style="color: darkred;">"LED is turned ON."</span>);<br>
+                  }<br>
+                  else {<br>
+                    &nbsp;&nbsp;Serial.println(<span style="color: darkred;">"LED is turned OFF."</span>);<br>
+                  }<br>
+                </code>
+            </div>
+        </div>
+    </section>
+
+<!--
+#####
+SECTION 4 - Essential Components
+#####
+-->
+    <section class="slide" id="cover" style="background-color: darkcyan;">
+        <h2>Essential Components</h2>
+        <p style="font-size: 1.8em;"></p>
+        <figure>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+            }
+        </style>
+    </section>
+
+<!--
+led with resistor, ultrasonic sensor, motor
+-->
 
     <section class="slide">
         <h2>Arduino Breadboard with LED</h2>
@@ -492,20 +946,17 @@ SECTION 3 - Software Environment (IDE)
         </div>
     </section>
 
-    <!--
-    - Common components they'll use:
-          - LEDs and resistors (Ohm's law basics)
-          - Sensors (temperature, light, ultrasonic)
-          - Motors and servos (mention need for external power)
-    -->
-
-    <!--
-    - Share code sheet blinking led
-    -->
     <section class="slide clear">
+        <h2>Blinking led</h2>
         <div class="columns two">
-            <h2>Blinking led</h2>
-            <div style="line-height: 1.2; font-size: 0.8em; margin-top: -70px; margin-left: -100px;">
+            <div>
+                <p><strong>Program structure</strong></p>
+                <ul>
+                    <li>setup()</li>
+                    <li>loop()</li>
+                </ul>
+            </div>
+            <div style="line-height: 1.2; font-size: 0.8em; margin-top: -170px; margin-left: -100px;">
                 <code style="background-color: white;"><br>
                     <span style="color: darkred;">// Give pin 13 a name.</span><br>
                     <span style="color: olive;">int</span> led = 13;<br>
@@ -517,7 +968,7 @@ SECTION 3 - Software Environment (IDE)
                     }<br>
                     <br>
                     <span style="color: darkred;">// The loop routine runs over and over again forever.</span><br>
-                    <span style="color: olive;">void</span> loop() {<br>
+                    <mark><span style="color: olive;">void</span> loop()</mark> {<br>
                     <span style="color: darkred;">// turn the LED on</span><br>
                     <span style="color: olive;">&nbsp;&nbsp;digitalWrite</span>(led, HIGH);<br>
                     <span style="color: darkred;">// wait for a second</span><br>
@@ -531,6 +982,13 @@ SECTION 3 - Software Environment (IDE)
             </div>
         </div>
     </section>
+
+    <!--
+    - Common components they'll use:
+          - LEDs and resistors (Ohm's law basics)
+          - Sensors (temperature, light, ultrasonic)
+          - Motors and servos (mention need for external power)
+    -->
 
     <div class="progress"></div>
 
