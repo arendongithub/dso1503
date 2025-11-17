@@ -886,7 +886,7 @@ Slide - Blinking led code
                     <li>a control block checks for a condition and executes the statement(s) accordingly</li>
                 </ul>
             </div>
-            <div class="columns two">
+            <div>
                 <code style="background-color: white;">
                   if (pinStatus == <span style="color: olive;">1</span>) {<br>
                     &nbsp;&nbsp;Serial.println(<span style="color: darkred;">"LED is turned ON."</span>);<br>
@@ -933,16 +933,74 @@ led with resistor, ultrasonic sensor, motor
 -->
 
     <section class="slide">
-        <h2>Arduino Breadboard with LED</h2>
+        <h2>Resistors</h2>
         <div class="columns two">
-            <figure>
-                <img src="img/arduino-5.png" alt="Arduino Microprocessor" width="110%">
-            </figure>
-            <code style="background-color: white;">
-                <span style="color: olive;">int</span> pinLEDred=13;<br><br>
-                <span style="color: darkred;">pinMode</span>(pinLEDred, OUTPUT);<br><br>
-                <span style="color: darkred;">digitalWrite</span>(pinLEDred,HIGH);<br><br>
-            </code>
+            <div>
+                <figure>
+                    <img src="img/arduino-21.jpg" alt="Led with resistor" width="110%">
+                </figure>
+            </div>
+            <div>
+                <figure class="next">
+                    <img src="img/arduino-22.png" alt="Resistor" width="110%">
+                </figure>
+                <ul>
+                    <li><mark><strong>Resistors</strong></mark> are like narrow lanes that slow down the traffic.</li>
+                    <li>The unit of resistance is measured in <mark><strong>Ohms</strong></mark> (Ω).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Sensors</h2>
+        <figure>
+            <img src="https://www.hackatronic.com/wp-content/uploads/2024/04/Types-of-Sensors--1019x642.webp" alt="Arduino sensors" width="75%" style="margin-left: auto; margin-right: auto; display: block;">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 style="color: white;">Ultrasonic sensor</h2>
+        <figure>
+            <img class="cover width" src="img/arduino-23.jpeg" alt="Arduino sensors">
+        </figure>
+        <div class="next" id="usensor">
+            <img src="img/arduino-20.jpg" alt="Ultrasonic sensor" width="450px">
+        </div>
+        <style type="text/css">
+            #usensor {
+                position: absolute;
+                top: 20px; left: 550px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Ultrasonic sensor</h2>
+        <div class="columns two">
+            <div>
+                <figure>
+                    <img src="img/arduino-24.png" alt="Ultrasonic sensor">
+                </figure>
+            </div>
+            <div>
+<!--                 <code style="background-color: white;">
+                    <span style="color: olive;">void</span> setup() {<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// Define inputs and outputs:</span><br>
+                    &nbsp;&nbsp;pinMode(trigPin, OUTPUT);<br>
+                    &nbsp;&nbsp;pinMode(echoPin, INPUT);<br>
+                    }<br>
+                    <span style="color: olive;">void</span> loop() {<br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// Trigger the sensor by setting the trigPin high for 10 microseconds:</span><br>
+                    &nbsp;&nbsp;digitalWrite(trigPin, HIGH);<br>
+                    &nbsp;&nbsp;delayMicroseconds(10);<br>
+                    &nbsp;&nbsp;digitalWrite(trigPin, LOW);<br>
+                    <br>
+                    <span style="color: darkred;">&nbsp;&nbsp;// Read the echoPin</span><br>
+                    &nbsp;&nbsp;duration = pulseIn(echoPin, HIGH);<br>
+                    }<br>
+                </code> -->
+            </div>
         </div>
     </section>
 
